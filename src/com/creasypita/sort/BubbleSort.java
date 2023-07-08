@@ -7,6 +7,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] a = {3,4,2,9,8};
+//        int[] a = {2,3,4,8,9};
         sort(a);
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);
@@ -19,12 +20,18 @@ public class BubbleSort {
              重点是相邻元素j和j+1比较，那么j的边界在哪里，这里去感受下，是 a.length - 1 -i,
              而不是 a.length -i;
              */
+            boolean flag = true;
             for (int j = 0; j < a.length - 1 - i; j++) {
                 if (a[j] > a[j + 1]) {
                     int temp = a[j + 1];
                     a[j + 1] = a[j];
                     a[j] = temp;
+//                    System.out.println("发生了交换");
+                    flag = false;
                 }
+            }
+            if (flag) {
+                break;
             }
         }
     }
