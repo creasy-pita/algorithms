@@ -1,4 +1,4 @@
-package com.creasypita.Diff;
+package com.creasypita.diff;
 
 public final class Snake extends PathNode {
     public Snake(int i, int j, PathNode prev) {

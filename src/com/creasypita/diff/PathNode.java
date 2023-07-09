@@ -1,4 +1,4 @@
-package com.creasypita.Diff;
+package com.creasypita.diff;
 
 public abstract class PathNode {
     public final int i;

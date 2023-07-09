@@ -1,4 +1,4 @@
-package com.creasypita.Diff;
+package com.creasypita.diff;
 
 public interface Equalizer<T> {
 

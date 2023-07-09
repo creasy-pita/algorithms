@@ -1,4 +1,4 @@
-package com.creasypita.Diff;
+package com.creasypita.diff;
 
 import java.util.ArrayList;
 import java.util.Collections;
