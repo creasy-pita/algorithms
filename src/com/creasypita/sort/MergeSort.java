@@ -7,19 +7,23 @@ import java.util.Arrays;
 public class MergeSort {
 
     public static void main(String[] args) {
-        int n = 20;
+        int n = 200000;
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = RadomIntUtils.randInt(0, 100);
         }
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i]);
-        }
-        System.out.println("------------------------------------------------------------");
+//        for (int i = 0; i < a.length; i++) {
+//            System.out.println(a[i]);
+//        }
+//        System.out.println("------------------------------------------------------------");
+        Long startTime = System.currentTimeMillis();
         int[] reArr = sort(a);
-        for (int i = 0; i < reArr.length; i++) {
-            System.out.println(reArr[i]);
-        }
+        Long endTime = System.currentTimeMillis();
+        Long elapsedTime = (endTime - startTime) ;
+        System.out.println("该段总共耗时：" + elapsedTime + "ms");
+//        for (int i = 0; i < reArr.length; i++) {
+//            System.out.println(reArr[i]);
+//        }
     }
 
     public static int[] sort(int[] sourceArr) {
